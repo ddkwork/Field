@@ -9,6 +9,6 @@ import (
 
 func main() {
 	app.Run("Field", func(w *unison.Window) {
-		field.New().Layout(w.Content())
+		w.Content().AddChild(field.New().Layout())
 	})
 }
